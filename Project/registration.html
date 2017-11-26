@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html>
+<head>
+
+ <style>
+  
+            body{
+
+
+             background: lightgray;
+             margin: 0 auto;
+             font-family: arial;
+            }
+
+            h1{
+
+             color: brown;
+             text-align: center;
+            }
+      label{
+
+       color: #777;
+       width: 10%;
+       display: inline-block;
+
+      }
+
+      #container{
+
+
+       padding: 20px;
+       width: 60%;
+       margin: 0 auto;
+       margin-top: 1%;
+       margin-bottom: 1%;
+       background-color: white;
+      }
+
+   .userinput{
+
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 30px;
+
+   }
+   label{
+
+    color: brown;
+    font-size: 14px;
+   }
+   textarea{
+ color: brown;
+    font-size: 14px;
+
+
+   }
+
+   select{
+
+    color: brown;
+   }
+  
+
+   .sampleBtn{
+      
+       background-color: #f1f1f1;
+       width: 20%;
+       height: 35px;
+       font-size: 16px;
+
+   }
+   .sampleBtn:hover{
+
+          color: white;
+          background-color: brown;
+          cursor: pointer;
+   }
+ </style>
+
+</head>
+
+<body>
+<div id="container">
+ <h1> Student Registration Form </h1>
+ 
+ <form method="GET" action="register.jsp">
+ 
+  <div class="userinput">
+   <label> First Name  </label>
+   <input type="text" name="firstName" value="" />
+  </div>
+  
+  <div class="userinput">
+   <label> Last Name  </label>
+   <input type="text" name="lastName" value="" />
+  </div>
+  
+  <div class="userinput">
+   <label> Email </label>   
+   <input type="text" name="email" value="" />
+  </div>
+  
+  <div class="userinput">
+   <label> Gender </label>
+   <input type="radio" name="gender" value="m"/> Male
+   <input type="radio" name="gender" value="f" /> Female    
+  </div>
+  
+  <div class="userinput">
+   <label> Choose Subjects </label>    
+   <input type="checkbox" name="subject" value="OOP"/> OOP
+   <input type="checkbox" name="subject" value="DB" checked/> Database
+   <input type="checkbox" name="subject" value="Web"/> Web Technologies
+   <input type="checkbox" name="subject" value="Android"/> Android Dev. 
+  </div>
+  
+  <div class="userinput">
+   <label>Comments </label>
+   <textarea name="comments" palceholder="Search here" rows="7" cols="40"></textarea>
+  </div>
+  
+  <div class="userinput">
+   <label>City </label>
+   <select name="city">
+    <option value="1">KOCHI</option>
+    <option value="2">CALICUT</option>
+    <option value="3">OUTSIDE KERALA</option>
+   </select>
+  </div>
+  
+  <div style="text-align:center">
+   <input type="reset" class="sampleBtn"/>
+   <input type="submit" class="sampleBtn"/>   
+  </div>
+  
+ </form>
+ 
+ </div>
+ 
+</body>
+
+</html>
